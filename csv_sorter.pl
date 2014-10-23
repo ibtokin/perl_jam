@@ -14,9 +14,7 @@ chomp @header;
 print "\n", "The header row is: ", "@header\n";
 my @order = join( ',', @header);
 @order = sort { lc($a) cmp lc($b) } @header; # 123-abc sort
-foreach (@order){
-    print $fh "$_";
-}
+print $fh join( ',', @header);
 print $fh "\n";
 
 while (my $line = <$data>) {
@@ -34,7 +32,6 @@ while (my $line = <$data>) {
     my @idx = sort { $aa[$a] cmp $aa[$b] } 0 .. $#aa;
     @aa = @aa[@idx];
     @bb = @bb[@idx];
-    print $fh "@aa\n";
     #This is where we have to sort
     #We have to sort the array '@row'
     my $sorted = join( ',', @bb);
