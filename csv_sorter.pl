@@ -2,12 +2,37 @@
 use strict;
 use warnings;
 
+
 my $input = $ARGV[0] or die "You must specify a CSV file as a command line argument!\n";
+my @sorted_list;
 
 open(my $data, '<', $input) or die "Error opening $input!\nCheck your file type and try again.\n";
-my $i = 0;
-while (my $line = <$data>) {
-    my @values = split ",", $line;
+
+print "\n";
+print "Original values:\n";
+while (my $row = <$data>) {
+    my @values = split ",", $row;
     print @values;
 }
-#my $newline = split(',', input)
+
+print "\n";
+print "Sorted rows:";
+print "\n";
+open(my $sdata, '<', $input) or die "Error opening $input!\nCheck your file type and try again.\n";
+while (my $srow = <$sdata>) {
+    chomp $srow;
+    my @svalues = split ",", $srow;
+    foreach(@svalues) {
+        print "$_,";
+    }
+    print "\n";
+}
+print "\n";
+
+
+
+
+
+
+
+
