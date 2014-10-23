@@ -1,0 +1,9 @@
+1,2,3,4
+Tudor,Vidor,10,Hapci
+Szundi,Morgo,7,Szende
+12,201,563,203
+Kuka,Hofeherke,alma,100,Kiralyno
+Boszorkany,Herceg,9,Meselo
+wh@t,1f,theres,numb3rs
+w,h,a,t,i,f,t,h,e,r,e,a,r,e,l,o,t,s,o,f,e,l,e,m,e,n,t,s
+
