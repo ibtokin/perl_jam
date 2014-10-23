@@ -1,41 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+abcd
+SORTED:  one,two,three,four
+SORTED:  1,2,3,4
+SORTED:  a,b,c,d
+SORTED:  alpha,beta,gamma,delta
+SORTED:  first,second,third,fourth
+SORTED:  30,2,4,1
+SORTED:  Tudor,Vidor,10,Hapci
+SORTED:  uno,dos,tres,quatro
