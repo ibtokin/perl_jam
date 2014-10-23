@@ -19,10 +19,11 @@ print "\n";
 print "Sorted rows:";
 print "\n";
 open(my $sdata, '<', $input) or die "Error opening $input!\nCheck your file type and try again.\n";
-while (my $srow = <$sdata>) {
-    chomp $srow;
-    my @svalues = split ",", $srow;
-    foreach(@svalues) {
+while (my $line = <$sdata>) {
+    chomp $line;
+    my @list = split ",", $line;
+    @sorted_list = sort { lc($a) cmp lc($b) } @list;
+    foreach(@sorted_list) {
         print "$_,";
     }
     print "\n";
