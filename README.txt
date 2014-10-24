@@ -5,6 +5,10 @@ To use the csv_sorter.pl program, simply add a .csv filename as a command line a
 
   ~ User$ perl csv_sorter.pl input.csv
 
+
+Notes: 
+*I am aware that it's best practice to use 3 arguments with open(). Maybe after sleep.
+
 Something something, MIT License.
 All rights reversed.;)
 
